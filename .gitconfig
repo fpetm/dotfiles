@@ -1,0 +1,8 @@
+[user]
+	name = fpetm
+	signingkey = 7E68B5F83801F611
+	email = fpetm@proton.me
+[core]
+	editor = nvim
+[commit]
+	gpgsign = true
