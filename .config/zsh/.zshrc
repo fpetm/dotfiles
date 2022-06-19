@@ -33,6 +33,8 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '?' backward-delete-char
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 if [ -f $HOME/.config/zsh/plugins/powerlevel10k/README.md ]; then
     source $HOME/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
 fi
