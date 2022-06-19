@@ -1,0 +1,34 @@
+#!/bin/sh
+
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+for command in mount umount sv pacman updatedb su shutdown poweroff reboot apt ; do
+    alias $command="sudo $command"
+done; unset command
+
+alias \
+    cp="cp -iv" \
+    mv="mv -iv" \
+    rm="rm -vI" \
+    bc="bc -ql" \
+    mkd="mkdir -pv"
+
+alias \
+    ls="exa" \
+    grep="grep --color=auto" \
+    diff="diff --color=auto" \
+    ccat="highlight --out-format=ansi" \
+    ip="ip -color=auto"
+
+alias \
+    l="ls -a" \
+    ll="ls -la"
+
+alias \
+    a="apt"
+    ka="killall" \
+    g="git" \
+    e="nvim" \
+    v="nvim"
+
+
