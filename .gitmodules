@@ -4,3 +4,6 @@
 [submodule ".config/tmux/plugins/tpm"]
 	path = .config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "/home/user/.config/rofi/themes/gruvbox"]
+	path = /home/user/.config/rofi/themes/gruvbox
+	url = https://github.com/bardisty/gruvbox-rofi

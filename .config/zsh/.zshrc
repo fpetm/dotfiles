@@ -40,3 +40,4 @@ if [ -f $HOME/.config/zsh/plugins/powerlevel10k/README.md ]; then
 fi
 
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+source ~/.config/shell/aliasrc

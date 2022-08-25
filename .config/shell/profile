@@ -37,3 +37,5 @@ export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
 
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+source $HOME/.config/shell/aliasrc

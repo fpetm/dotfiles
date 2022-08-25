@@ -6,29 +6,26 @@ for command in mount umount sv pacman updatedb su shutdown poweroff reboot apt ;
     alias $command="sudo $command"
 done; unset command
 
-alias \
-    cp="cp -iv" \
-    mv="mv -iv" \
-    rm="rm -vI" \
-    bc="bc -ql" \
-    mkd="mkdir -pv"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -vI"
+alias bc="bc -ql"
+alias mkd="mkdir -pv"
 
-alias \
-    ls="exa" \
-    grep="grep --color=auto" \
-    diff="diff --color=auto" \
-    ccat="highlight --out-format=ansi" \
-    ip="ip -color=auto"
+alias ls="exa"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias ccat="highlight --out-format=ansi"
+alias ip="ip -color=auto"
 
-alias \
-    l="ls -a" \
-    ll="ls -la"
+alias l="ls -a"
+alias ll="ls -la"
 
-alias \
-    a="apt"
-    ka="killall" \
-    g="git" \
-    e="nvim" \
-    v="nvim"
+alias y="yay"
+alias ka="killall"
+alias g="git"
+alias e="nvim"
+alias v="nvim"
 
-
+alias za="zathura"
+alias nf="neofetch"
