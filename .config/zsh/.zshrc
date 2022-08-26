@@ -40,4 +40,10 @@ if [ -f $HOME/.config/zsh/plugins/powerlevel10k/README.md ]; then
 fi
 
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+case $TERM in
+    xterm*|termite|alacritty|foot)
+	precmd () {print -Pn "\e]0;zsh | ${PWD/#$HOME/~} | $(history | tail -n1 | awk '{for (i=2;i<=NF-1;i++) printf $i " "; print $NF}')\a"}
+        ;;
+esac
+
 source ~/.config/shell/aliasrc

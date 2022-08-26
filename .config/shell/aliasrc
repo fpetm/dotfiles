@@ -29,3 +29,7 @@ alias v="nvim"
 
 alias za="zathura"
 alias nf="neofetch"
+
+alias cl="clear"
+alias nf="neofetch"
+alias pf="pfetch"
