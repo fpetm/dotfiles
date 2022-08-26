@@ -1,6 +1,5 @@
 #!/bin/zsh
 
-export DISPLAY="192.168.0.249:0.0"
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}:/usr/local/go/bin/:$HOME/go/bin"
 
 export GPG_TTY=$(tty)
