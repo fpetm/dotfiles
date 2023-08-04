@@ -253,7 +253,7 @@ card = intel_backlight
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 10
 format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #689d6a
@@ -261,7 +261,7 @@ label = %percentage:2%%
 
 [module/memory]
 type = internal/memory
-interval = 2
+interval = 10
 format-prefix = "RAM "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #8ec07c
@@ -270,7 +270,7 @@ label = %percentage_used%%
 [module/wlan]
 type = internal/network
 interface = wlp3s0
-interval = 3.0
+interval = 10
 
 format-connected-prefix = "NET "
 format-connected-prefix-foreground = ${colors.foreground-alt}
@@ -296,7 +296,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 [module/eth]
 type = internal/network
 interface = enp0s25
-interval = 3.0
+interval = 10
 
 format-connected-underline = #55aa55
 format-connected-prefix = "ETH "
@@ -311,7 +311,7 @@ format-disconnected =
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 20
 
 date =
 date-alt = " %Y-%m-%d"

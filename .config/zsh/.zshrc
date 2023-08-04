@@ -35,15 +35,15 @@ bindkey -v '?' backward-delete-char
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-if [ -f $HOME/.config/zsh/plugins/powerlevel10k/README.md ]; then
-    source $HOME/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme
-fi
+source ~/.config/zsh/plugins/zsh-z.plugin.zsh
 
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-case $TERM in
-    xterm*|termite|alacritty|foot)
-	precmd () {print -Pn "\e]0;[${PWD/#$HOME/~}] $(history | tail -n1 | awk '{for (i=2;i<=NF-1;i++) printf $i " "; print $NF}')\a"}
-        ;;
-esac
+autoload -U promptinit; promptinit
+#prompt spaceship
+
+#case $TERM in
+#    xterm*|termite|alacritty|foot)
+#	precmd () {print -Pn "\e]0;[${PWD/#$HOME/~}] $(history | tail -n1 | awk '{for (i=2;i<=NF-1;i++) printf $i " "; print $NF}')\a"}
+#        ;;
+#esac
 
 source ~/.config/shell/aliasrc

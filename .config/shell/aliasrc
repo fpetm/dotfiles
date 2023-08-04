@@ -28,8 +28,12 @@ alias e="nvim"
 alias v="nvim"
 
 alias za="zathura"
+alias ok="okular"
 alias nf="neofetch"
 
 alias cl="clear"
-alias nf="neofetch"
-alias pf="pfetch"
+
+alias t="tmux"
+alias ta="tmux attach"
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
