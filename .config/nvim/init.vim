@@ -16,6 +16,7 @@ Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -27,22 +28,23 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-signify'
-"""Plug 'jiangmiao/auto-pairs'
-"""Plug 'alvan/vim-closetag'
-"""Plug 'tpope/vim-abolish'
-"""Plug 'junegunn/vim-easy-align'
-"""Plug 'scrooloose/nerdcommenter'
-"""Plug 'Yggdroot/indentLine'
-"""Plug 'chrisbra/Colorizer'
-"""Plug 'KabbAmine/vCoolor.vim'
-"""Plug 'dkarter/bullets.vim'
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-abolish'
+Plug 'junegunn/vim-easy-align'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Yggdroot/indentLine'
+Plug 'chrisbra/Colorizer'
+Plug 'KabbAmine/vCoolor.vim'
+Plug 'dkarter/bullets.vim'
 """Plug 'wellle/context.vim'
-"""Plug 'antoinemadec/FixCursorHold.nvim'
-"""Plug 'psf/black', { 'branch': 'stable' }
-"""Plug 'heavenshell/vim-pydocstring'
-"""Plug 'junegunn/rainbow_parentheses.vim'
-"""Plug 'junegunn/limelight.vim'
-"""Plug 'junegunn/vim-journal'
+Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'psf/black', { 'branch': 'stable' }
+Plug 'heavenshell/vim-pydocstring'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/vim-journal'
 Plug 'shaunsingh/nord.nvim'
 
 call plug#end()
@@ -75,9 +77,9 @@ servers = {
     'pyright',
     --'tsserver', -- uncomment for typescript. See https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md for other language servers
 }
-require("treesitter-config")
-require("lualine-config")
-require("lspconfig-config")
-require("nvim-cmp-config")
-require("telescope-config")
+require("plugins.treesitter-config")
+require("plugins.lualine-config")
+require("plugins.lspconfig-config")
+require("plugins.nvim-cmp-config")
+require("plugins.telescope-config")
 EOF
