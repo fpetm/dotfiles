@@ -33,6 +33,7 @@ local options = {
     sidescrolloff = 8,
     guifont = "monospace:h17",
     whichwrap = "bs<>[]hl",
+    background = "dark",
 }
 
 for k,n in pairs(options) do
@@ -42,3 +43,5 @@ end
 vim.opt.shortmess:append "c"
 vim.opt.iskeyword:append "-"
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")
+
+
