@@ -36,7 +36,7 @@ require("lazy").setup({
       {'L3MON4D3/LuaSnip'},     -- Required
     }
   },
-  { 'nvim-lualine/lualine.nvim' },
+  { 'nvim-lualine/lualine.nvim' , dependencies = { 'nvim-tree/nvim-web-devicons' } },
   { 'ThePrimeagen/harpoon' },
   { 'nvim-tree/nvim-tree.lua' },
   { 'folke/zen-mode.nvim' },
